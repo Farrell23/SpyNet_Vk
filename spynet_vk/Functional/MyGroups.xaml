@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="SpyNet_Vk.MyGroups"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:view="clr-namespace:SpyNet_Vk.ViewModel"
+             xmlns:local="clr-namespace:SpyNet_Vk"
+             xmlns:convert="clr-namespace:SpyNet_Vk.Converter"
+             mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300" 
+             Background="#212121" Width="580" Height="560">
+
+    <UserControl.DataContext>
+        <view:GroupsModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <convert:CountMemberConverter x:Key="myGroupMemberConverter"/>
+    </UserControl.Resources>
+
+    <Grid>
+        <Label Content="Количество групп: " Height="30" Foreground="White" Margin="28,24,436,506"/>
+        <Label x:Name="labelCountGroups" Height="30" Width="40" Foreground="White" Margin="140,24,400,506" Content="{Binding Length_groups, Mode=TwoWay}" RenderTransformOrigin="2.15,0.433"/>
+        <Button x:Name="btn_Delete_All_groups" Content="Удалить все группы" HorizontalAlignment="Left" Margin="356,54,0,0" VerticalAlignment="Top" Height="30" Width="160" Command="{Binding Delete_AllGroups}"/>
+        <Button x:Name="btn_delete_SelectGroups" Content="Удалить" HorizontalAlignment="Left" Margin="356,110,0,0" VerticalAlignment="Top" Height="30" Width="160" Command="{Binding Delete_SelectGroups}"/>
+
+        <Viewbox Width="25" Height="25" HorizontalAlignment="Center" Margin="263,24,292,511">
+            <Grid Name="prog_view" Visibility="{Binding EnableProgress}" ToolTip="Идет обновление">
+                <local:ProgressBar />
+            </Grid>
+        </Viewbox>
+
+        <Grid Name="check" Width="40" Height="40" Margin="288,14,252,506">
+            <Button x:Name="btn_Update" Background="Transparent" BorderThickness="0" ToolTip="Обновить" Command="{Binding Update_Groups}">
+                <Path Width="22" Height="26" Canvas.Left="13" Canvas.Top="11" Stretch="Fill" Fill="{StaticResource FillPath}" Data="{StaticResource refreshStyle0}" />
+            </Button>
+        </Grid>
+
+        <ListBox x:Name="listGroups" ItemsSource="{Binding groups, IsAsync=True, Mode=TwoWay}" Margin="28,54,252,50" Background="White" SelectionMode="Multiple">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1" Height="60" Width="260">
+                        <StackPanel Margin="5" Orientation="Horizontal" ToolTip="{Binding Name}">
+                            <Image Source="{Binding Photo100}" Height="50" Width="50" Margin="5" />
+
+                            <StackPanel>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold" Foreground="Black"/>
+                                <TextBlock Text="{Binding MembersCount, Converter={StaticResource myGroupMemberConverter}, StringFormat=Участников: {0}}" Foreground="Black" /> <!--StringFormat=\{0:0\ 0\}-->
+                                <TextBlock Text="{Binding Activity}" FontWeight="Bold" Foreground="Black" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+
+    </Grid>
+</UserControl>

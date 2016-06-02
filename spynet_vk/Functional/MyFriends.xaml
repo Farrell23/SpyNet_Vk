@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="SpyNet_Vk.MyFriends"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:view="clr-namespace:SpyNet_Vk.ViewModel"
+             xmlns:local="clr-namespace:SpyNet_Vk"
+             Background="#212121" Width="Auto" Height="Auto">
+
+    <UserControl.DataContext>
+        <view:FriendsModel/>
+    </UserControl.DataContext>
+
+    <Viewbox>
+        <Grid>
+        <Label Content="Количество друзей: " Height="30" Margin="24,22,425,508" Foreground="White"/>
+        <Label x:Name="labelCountFriends" Height="30" Width="40" Margin="143,22,397,508" Foreground="White" Content="{Binding Length_friends, Mode=TwoWay}"/>
+
+        <ListBox x:Name="listFriend" ItemsSource="{Binding friends, IsAsync=True, Mode=TwoWay}" Margin="28,59,302,101" Background="White" SelectionMode="Multiple"  Width="250" Height="400">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1" Height="60" Width="210">
+                        <StackPanel Margin="5" Orientation="Horizontal">
+                            <Image Source="{Binding Photo50}" Height="50" Width="50" Margin="5" />
+
+                            <StackPanel>
+                                <TextBlock Text="{Binding FirstName }" FontWeight="Bold" Foreground="Black"/>
+                                <TextBlock Text="{Binding LastName}" FontWeight="Bold" Foreground="Black" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button x:Name="btn_delete_selectFriends" Content="Удалить" HorizontalAlignment="Left" Margin="73,470,0,0" VerticalAlignment="Top" Height="30" Width="160" Command="{Binding Delete_SelectFriends}"/>
+        <Button x:Name="btn_Delete_All_friends" Content="Удалить все друзей" HorizontalAlignment="Left" Margin="73,520,0,0" VerticalAlignment="Top" Height="30" Width="160" Command="{Binding Delete_AllFriends}"/>
+
+        <Label Content="Количество подписчиков: " Height="30" Margin="303,22,108,508" Foreground="White"/>
+        <Label x:Name="labelCountFollowers" Height="30" Width="40" Margin="459,22,81,508" Foreground="White" Content="{Binding Length_followers, Mode=TwoWay}"/>
+
+        <ListBox ItemsSource="{Binding followers, IsAsync=True, Mode=TwoWay}" Margin="303,59,27,101" Background="White" SelectionMode="Multiple" Width="250" Height="400">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1" Height="60" Width="210">
+                        <StackPanel Margin="5" Orientation="Horizontal">
+                            <Image Source="{Binding Photo100}" Height="50" Width="50" Margin="5" />
+
+                            <StackPanel>
+                                <TextBlock Text="{Binding FirstName }" FontWeight="Bold" Foreground="Black"/>
+                                <TextBlock Text="{Binding LastName}" FontWeight="Bold" Foreground="Black" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Viewbox Width="25" Height="25" HorizontalAlignment="Center" Margin="213,27,342,508">
+            <Grid Name="prog_view" Visibility="{Binding EnableProgress}" ToolTip="Идет обновление">
+                <local:ProgressBar />
+            </Grid>
+        </Viewbox>
+
+        <Grid Name="check" Width="40" Height="40" Margin="238,19,302,501">
+            <Button x:Name="btn_Update" Background="Transparent" BorderThickness="0" ToolTip="Обновить" Command="{Binding Update_Friends}">
+                <Path Width="22" Height="26" Canvas.Left="13" Canvas.Top="11" Stretch="Fill" Fill="{StaticResource FillPath}" Data="{StaticResource refreshStyle0}" />
+            </Button>
+        </Grid>
+
+    </Grid>
+    </Viewbox>
+</UserControl>

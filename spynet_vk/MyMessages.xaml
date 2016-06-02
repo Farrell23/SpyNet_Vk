@@ -1,0 +1,72 @@
+﻿<UserControl x:Class="SpyNet_Vk.MyMessages"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SpyNet_Vk"
+             xmlns:convert="clr-namespace:SpyNet_Vk.Converter"
+             xmlns:view="clr-namespace:SpyNet_Vk.ViewModel"
+             Background="#212121" Height="Auto" Width="Auto">
+
+    <UserControl.DataContext>
+        <view:MessageModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <convert:DateConverter x:Key="myDateConverter"/>
+        <convert:IDToUserPhoto x:Key="myIDUserPhotoConverter"/>
+        <convert:IDToUserName x:Key="myIDUserNameConverter"/>
+        <convert:IDToUserIsOnline x:Key="myIDUserIsOnlineConverter"/>
+    </UserControl.Resources>
+
+    <Viewbox>
+        <Grid>
+            <Label Content="Количество диалогов: " Height="30" Foreground="White" Margin="28,24,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="132"/>
+            <Label x:Name="labelCountDialogs" Height="30" Width="40" Foreground="White" Margin="155,24,0,0" Content="{Binding Length_dialogs}" VerticalAlignment="Top" HorizontalAlignment="Left" />
+
+            <Viewbox Width="25" Height="25" HorizontalAlignment="Left" Margin="474,24,0,0" VerticalAlignment="Top">
+                <Grid Visibility="{Binding EnableProgress}">
+                    <local:ProgressBar />
+                </Grid>
+            </Viewbox>
+
+            <Grid Width="40" Height="40" Margin="499,14,41,0" VerticalAlignment="Top">
+                <Button Background="Transparent" BorderThickness="0" ToolTip="Обновить" Command="{Binding UpdateData}">
+                    <Path Width="22" Height="26" Canvas.Left="13" Canvas.Top="11" Stretch="Fill" Fill="{StaticResource FillPath}" Data="{StaticResource refreshStyle0}" />
+                </Button>
+            </Grid>
+
+            <ListBox x:Name="list_dialogs" ItemsSource="{Binding message, IsAsync=True, Mode=TwoWay}" Height="405" Margin="28,54,38,0" VerticalAlignment="Top" Background="White">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Black" BorderThickness="1" Height="60" Width="350">
+                            <StackPanel Orientation="Horizontal">
+
+                                <!-- раздел со сведениями про собеседника -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="{Binding UserId, Converter={StaticResource myIDUserPhotoConverter}}" Height="50" Width="50" Margin="3"/>
+
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="{Binding UserId, Converter={StaticResource myIDUserNameConverter}}" Foreground="Black" Margin="2"/>
+                                        <TextBlock Text="{Binding UserId, Converter={StaticResource myIDUserIsOnlineConverter}}" Foreground="Black" Margin="2"/>                                        
+                                        <TextBlock Text="{Binding Date, Converter={StaticResource myDateConverter}}" Foreground="Black" Margin="2"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                
+                                <!--Раздел с последним сообщением-->
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Body}" Foreground="Black" Margin="5, 25,0,0" />
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Button Content="Удалить все диалоги" HorizontalAlignment="Left" Margin="28,472,0,0" VerticalAlignment="Top" Width="148" Height="30" Command="{Binding DeleteAllDialogs}"/>
+            <Button Content="Удалить выбранные диалоги" HorizontalAlignment="Left" Margin="206,472,0,0" VerticalAlignment="Top" Width="199" Height="30" Command="{Binding DeleteSelectDialogs}"/>
+
+        </Grid>
+    </Viewbox>
+</UserControl>

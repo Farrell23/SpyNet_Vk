@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="SpyNet_Vk.MyDocuments"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:view="clr-namespace:SpyNet_Vk.ViewModel"
+             xmlns:convert="clr-namespace:SpyNet_Vk.Converter"
+             xmlns:local="clr-namespace:SpyNet_Vk"
+             Background="#212121" Width="Auto" Height="Auto">
+
+    <UserControl.DataContext>
+        <view:DocumentsModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <convert:DocSizeConvert x:Key="myDocSizeConvert"/>
+        <convert:DocPictureConverter x:Key="myDocPicConverter"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Label Content="Количество документов: " Height="30" Margin="28,24,405,506" Foreground="White"/>
+        <Label x:Name="labelCountDocs" Height="30" Width="40" Margin="175,24,365,506" Foreground="White" Content="{Binding Length_docs}"/>
+        
+        <ListBox x:Name="listDocs" ItemsSource="{Binding docs, IsAsync=True, Mode=TwoWay}" Margin="28,59,272,66" Background="White" SelectionMode="Multiple" Height="435" Width="270">
+
+            <!--<ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Download document" Command="{Binding DownloadDoc}" />
+                </ContextMenu>
+            </ListBox.ContextMenu>-->
+            
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1" Height="60" Width="230">
+                        <StackPanel Margin="5" Orientation="Horizontal" ToolTip="{Binding Title}">
+                            <Image Source="{Binding Preview, Converter={StaticResource myDocPicConverter}}" Height="50" Width="50" Margin="5" /> <!--.Photo.Sizes[0].Src.Value-->
+
+                            <StackPanel>
+                                <TextBlock Text="{Binding Title}" FontWeight="Bold" Foreground="Black"/>
+                                <TextBlock Text="{Binding Ext}"  Foreground="Black" />
+                                <TextBlock Text="{Binding Size,Converter={StaticResource myDocSizeConvert} ,StringFormat=Size: {0} Mb}" Foreground="Black" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button x:Name="btn_Delete_All_docs" Content="Удалить все документы" HorizontalAlignment="Left" Margin="356,54,0,0" VerticalAlignment="Top" Height="30" Width="166" Command="{Binding Delete_AllDocs}"/>
+        <Button x:Name="btn_delete_SelectDocs" Content="Удалить" HorizontalAlignment="Left" Margin="356,110,0,0" VerticalAlignment="Top" Height="30" Width="166" Command="{Binding Delete_SelectDocs}" />
+
+        <Viewbox Width="25" Height="25" Margin="238,29,317,506" >
+            <Grid Name="prog_view" Visibility="{Binding EnableProgress}" ToolTip="Идет обновление">
+                <local:ProgressBar />
+            </Grid>
+        </Viewbox>
+        
+        <Grid Name="check" Width="40" Height="40" Margin="263,19,277,501">
+            <Button x:Name="btn_Update" Background="Transparent" BorderThickness="0" ToolTip="Обновить" Command="{Binding Update_Docs}">
+                <Path Width="22" Height="26" Canvas.Left="13" Canvas.Top="11" Stretch="Fill" Fill="{StaticResource FillPath}" Data="{StaticResource refreshStyle0}" />
+            </Button>
+        </Grid>
+        
+    </Grid>
+</UserControl>

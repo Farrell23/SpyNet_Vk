@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="SpyNet_Vk.MyWall"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SpyNet_Vk"
+              xmlns:view="clr-namespace:SpyNet_Vk.ViewModel"
+             mc:Ignorable="d" Background="#212121"
+             d:DesignHeight="300" d:DesignWidth="300" Width="580" Height="560">
+
+    <UserControl.DataContext>
+        <view:WallModel/>
+    </UserControl.DataContext>
+
+    <!--<UserControl.Resources>
+        <Style TargetType="ListBoxItem">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=post}" Value="Hello world!!!">
+                    <Setter Property="Background" Value="Black" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=Publisher}" Value="">
+                    <Setter Property="Background" Value="Yellow" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>-->
+
+    <Viewbox >
+        <Grid>
+            <Label Content="Количество записей на стене: " Height="30" Foreground="White" Margin="28,29,377,501"/>
+            <Label x:Name="labelCountWallPost" Height="30" Width="40" Foreground="White" Margin="203,29,337,501" Content="{Binding Length_wall}" />
+
+            <Viewbox Width="25" Height="25" HorizontalAlignment="Center" Margin="479,29,76,506">
+                <Grid Visibility="{Binding EnableProgress}">
+                    <local:ProgressBar />
+                </Grid>
+            </Viewbox>
+
+            <Grid Width="40" Height="40" Margin="504,19,36,501">
+                <Button Background="Transparent" BorderThickness="0" ToolTip="Обновить" Command="{Binding UpdateData}">
+                    <Path Width="22" Height="26" Canvas.Left="13" Canvas.Top="11" Stretch="Fill" Fill="{StaticResource FillPath}" Data="{StaticResource refreshStyle0}" />
+                </Button>
+            </Grid>
+
+            <ListBox x:Name="list_wall" ItemsSource="{Binding post, IsAsync=True, Mode=TwoWay}"  
+                 HorizontalAlignment="Left" Height="438" Margin="28,59,0,0" VerticalAlignment="Top" Width="519" Background="White">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="Black" BorderThickness="1" Margin="5">
+                            <StackPanel>
+
+                                <Label Content="{Binding Text}"/>
+                                <Label Content="{Binding Attachment}"/>
+                              
+                                <Label Content="{Binding Date}"/>
+                                <Label Content="{Binding Likes.Count, StringFormat=Лайков: {0}}"/>
+                            </StackPanel>                           
+
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            
+            <Button Content="Удалить запись" HorizontalAlignment="Left" Margin="40,511,0,0" VerticalAlignment="Top" Height="30" Width="111" Command="{Binding DeleteSelectPost}"/>
+            <Button Content="Удалить все записи" HorizontalAlignment="Left" Margin="171,511,0,0" VerticalAlignment="Top" Height="30" Width="130" Command="{Binding DeleteAllPost}"/>
+
+        </Grid>
+    </Viewbox>
+</UserControl>

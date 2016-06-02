@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="SpyNet_Vk.MyPhoto"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
+             
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"  
+             xmlns:local="clr-namespace:SpyNet_Vk"
+             xmlns:view="clr-namespace:SpyNet_Vk.ViewModel"           
+             
+             mc:Ignorable="d" Background="#212121"
+             d:DesignHeight="300" d:DesignWidth="300" Width="580" Height="560">
+
+    <UserControl.DataContext>
+        <view:PhotoModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Label Content="Количество альбомов: " Height="30" Foreground="White" Margin="28,24,415,506"/>
+        <Label x:Name="labelCountAlbums" Height="30" Width="40" Foreground="White" Margin="165,24,375,506" Content="{Binding Length_albums}"/>
+
+        <Viewbox Width="25" Height="25" HorizontalAlignment="Center" Margin="233,29,322,506">
+            <Grid Visibility="{Binding EnableProgressAlbums}" ToolTip="Идет обновление">
+                <local:ProgressBar />
+            </Grid>
+        </Viewbox>
+
+        <Grid Width="40" Height="40" Margin="258,19,282,501">
+            <Button Background="Transparent" BorderThickness="0" ToolTip="Обновить альбомы" Command="{Binding UpdateData}">
+                <Path Width="22" Height="26" Canvas.Left="13" Canvas.Top="11" Stretch="Fill" Fill="{StaticResource FillPath}" Data="{StaticResource refreshStyle0}" />
+            </Button>
+        </Grid>
+
+        <ListBox x:Name="listAlbums" ItemsSource="{Binding Albums, IsAsync=True}" Margin="28,59,282,50" Background="White" SelectionMode="Multiple">
+            <ListBox.InputBindings>
+                <KeyBinding Key="Enter" Command="{Binding Select_Album}"/>
+            </ListBox.InputBindings>
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding Select_Album}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1" Margin="5"  Height="60" Width="230">
+                        <StackPanel Margin="5" Orientation="Horizontal" ToolTip="{Binding Title}">
+                            <Image Source="{Binding ThumbSrc}" Height="50" Width="50" Margin="5" />
+
+                            <StackPanel>
+                                <TextBlock Text="{Binding Title}" FontWeight="Bold" Foreground="Black"/>
+                                <TextBlock Text="{Binding Size}" Foreground="Black" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Label Content="Количество фото: " Height="30" Foreground="White" Margin="303,24,167,506" />
+        <Label x:Name="labelCountPhoto" Height="30" Width="40" Foreground="White" Margin="418,24,122,506" Content="{Binding Length_photo}"/>
+
+        <Viewbox Width="25" Height="25" HorizontalAlignment="Center" Margin="489,29,66,506">
+            <Grid Visibility="{Binding EnableProgressPhoto}" ToolTip="Идет обновление">
+                <local:ProgressBar />
+            </Grid>
+        </Viewbox>
+
+        <Grid Width="40" Height="40" Margin="514,19,26,501">
+            <Button Background="Transparent" BorderThickness="0" ToolTip="Обновить фотографии в альбоме" Command="{Binding UpdateData}">
+                <Path Width="22" Height="26" Canvas.Left="13" Canvas.Top="11" Stretch="Fill" Fill="{StaticResource FillPath}" Data="{StaticResource refreshStyle0}" />
+            </Button>
+        </Grid>
+
+        <ListBox x:Name="listPhoto" ItemsSource="{Binding Photo_for_binding, IsAsync=True}" Margin="303,59,26,50" Background="White" SelectionMode="Multiple">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1" Margin="5">
+                        <StackPanel Margin="5" Orientation="Horizontal">
+                            <Image Source="{Binding Photo75}" Margin="5" />
+
+                            <StackPanel>
+                                <TextBlock Text="{Binding Title}" FontWeight="Bold" Foreground="Black"/>
+                                <TextBlock Text="{Binding Size}" Foreground="Black" />
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button x:Name="btn_DeleteAllAlbums" Content="Удалить все альбомы" HorizontalAlignment="Left" Margin="28,520,0,0" VerticalAlignment="Top" Width="128" Height="30" 
+                Command="{Binding Delete_AllAlbums}"/>
+        <Button x:Name="btn_DeleteSelectAlbum" Content="Удалить альбом" HorizontalAlignment="Left" Margin="200,520,0,0" VerticalAlignment="Top" Width="98" Height="30" 
+                Command="{Binding Delete_SelectAlbum}"/>
+        <Button x:Name="btn_DeleteAllPhoto" Content="Удалить все фото" HorizontalAlignment="Left" Margin="303,520,0,0" VerticalAlignment="Top" Width="110" Height="30" 
+                Command="{Binding Delete_AllPhoto}"/>
+        <Button x:Name="btn_DeleteSelectPhoto" Content="Удалить фото" HorizontalAlignment="Left" Margin="465,520,0,0" VerticalAlignment="Top" Width="89" Height="30" 
+                Command="{Binding Delete_SelectPhoto}"/>
+
+
+
+    </Grid>
+</UserControl>
