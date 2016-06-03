@@ -1,0 +1,125 @@
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\SpyNet_Vk.exe.config
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Brushes.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Core.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Icons.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyGroups.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyFriends.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyDocuments.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyMessages.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyAudio.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyWall.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyVideo.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyPhoto.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\UserControl\ProgressBar.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Core.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\App.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk_MarkupCompile.cache
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk_MarkupCompile.lref
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\SpyNet_Vk.exe
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\SpyNet_Vk.pdb
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\HtmlAgilityPack.dll
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\Newtonsoft.Json.dll
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\System.Windows.Interactivity.dll
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\VkNet.dll
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\HtmlAgilityPack.pdb
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\HtmlAgilityPack.xml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\Newtonsoft.Json.xml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\System.Windows.Interactivity.xml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\VkNet.xml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\App.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyGroups.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyFriends.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyDocuments.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyMessages.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyAudio.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyWall.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyVideo.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyPhoto.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\UserControl\ProgressBar.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.g.resources
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.Properties.Resources.resources
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.csproj.GenerateResource.Cache
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.exe
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.pdb
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\SelectAct.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\SelectAct.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\MainWindow.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\MainWindow.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\Monitor.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\Monitor.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\DataAboutMyself.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\ShortInformation.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\AuthorizationForm.g.cs
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\DataAboutMyself.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\ShortInformation.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\AuthorizationForm.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.csprojResolveAssemblyReference.cache
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\WindowTemplate.baml
+D:\MyProject\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\WindowTemplate.g.cs
+C:\Users\Vadim\Desktop\Utility_Vk\SpyNet_Vk\SpyNet_Vk\bin\Debug\SpyNet_Vk.exe.config
+C:\Users\Vadim\Desktop\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.exe
+C:\Users\Vadim\Desktop\Utility_Vk\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.pdb
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\SpyNet_Vk.exe.config
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.exe
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.pdb
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\SpyNet_Vk.exe
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\SpyNet_Vk.pdb
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\HtmlAgilityPack.dll
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\Newtonsoft.Json.dll
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\System.Windows.Interactivity.dll
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\VkNet.dll
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\HtmlAgilityPack.pdb
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\HtmlAgilityPack.xml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\Newtonsoft.Json.xml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\System.Windows.Interactivity.xml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\bin\Debug\VkNet.xml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.csprojResolveAssemblyReference.cache
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\WindowTemplate.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Brushes.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Core.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Icons.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\DataAboutMyself.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\ShortInformation.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\MainWindow.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\AuthorizationForm.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyGroups.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyFriends.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyDocuments.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\Monitor.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyMessages.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyAudio.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyWall.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyVideo.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyPhoto.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\SelectAct.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\WindowTemplate.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\UserControl\ProgressBar.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Themes\Core.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\App.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk_MarkupCompile.cache
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk_MarkupCompile.lref
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\App.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\DataAboutMyself.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\ShortInformation.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\MainWindow.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\AuthorizationForm.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyGroups.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyFriends.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyDocuments.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\Monitor.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyMessages.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyAudio.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\MyWall.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyVideo.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Functional\MyPhoto.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\Navigation Windows\SelectAct.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\UserControl\ProgressBar.baml
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.g.resources
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.Properties.Resources.resources
+D:\MyProject\Spy and Utility_Vk(Git)\SpyNet_Vk\SpyNet_Vk\obj\Debug\SpyNet_Vk.csproj.GenerateResource.Cache
